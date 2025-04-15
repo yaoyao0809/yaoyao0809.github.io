@@ -1,155 +1,196 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh-Hant">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>五首唐詩</title>
+
+     <!--引入google font-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
 
+    <!--引用Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <!--顏色-->
     <style>
-        .klee-one-caption {
+        .card-title {
             font-family: "Klee One", cursive;
             font-weight: 600;
             font-style: normal;
         }
 
-        .klee-one-maincontent {
+        .card-text {
             font-family: "Klee One", cursive;
             font-weight: 400;
             font-style: normal;
             color: #849189;
         }
+
+        .nav-item {
+            font-family: "Klee One", cursive;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .navbar-brand {
+            font-family: "Klee One", cursive;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .form-control{
+            font-family: "Klee One", cursive;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .btn-outline-success{
+            font-family: "Klee One", cursive;
+            font-weight: 600;
+            font-style: normal;
+        }
     </style>
 </head>
 
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+<body align="center">
+    <!--導覽菜單-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="http://www.ntue.edu.tw"><img src="img/ghost.png" width="54" height="54">Yaoyao's website</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <!-- 一條三
-    -->
-    <div class="container text-center">
-        <div class="row">
-            <div class="col">
-                <div id="mycard">
-
-                    <img src="img/climb.jpg" width="256">
-
-                    <div id="caption" class="klee-one-caption">
-                        <h1>杜甫-登樓</h1>
-                    </div>
-
-                    <div id="maincontent" class="klee-one-maincontent">
-                        <p>花近高樓傷客心，萬方多難此登臨。</br>
-                            錦江春色來天地，玉壘浮雲變古今。</br>
-                            北極朝廷終不改，西山寇盜莫相侵。</br>
-                            可憐後主還祠廟，日暮聊為梁父吟。</br>
-                        </p>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="col">
-                <div id="mycard">
-
-                    <img src="img/yellow.png" width="256">
-
-                    <div id="caption" class="klee-one-caption">
-                        <h1> 崔顥-黃鶴樓</h1>
-                    </div>
-
-                    <div id="maincontent" class="klee-one-maincontent">
-                        <p>昔人已乘黃鶴去，此地空餘黃鶴樓。</br>
-                            黃鶴一去不復返，白雲千載空悠悠。</br>
-                            晴川歷歷漢陽樹，芳草萋萋鸚鵡洲。</br>
-                            日暮鄉關何處是，煙波江上使人愁。</br>
-                            
-                        </p>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="col">
-                <div id="mycard">
-
-                    <img src="img/libai.png" width="256">
-
-                    <div id="caption" class="klee-one-caption">
-                        <h1>李白-贈孟浩然</h1>
-                    </div>
-
-                    <div id="maincontent" class="klee-one-maincontent">
-                        <p>吾 愛 孟 夫 子 ，風 流 天 下 聞 。</br>
-                            紅 顏 棄 軒 冕 ，白 首 臥 松 雲 。</br>
-                            醉 月 頻 中 聖 ，迷 花 不 事 君 。</br>
-                            高 山 安 可 仰 ，徒 此 挹 清 芬 。</br>
-                            
-                        </p>
-                    </div>
-
-
-                </div>
-            </div>
+    <!--下拉式選單-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://sites.google.com/stu.ntue.edu.tw/Yaoyao">02/25 這是我的網頁</a></li>
+                  <li><a class="dropdown-item" href="file:///C:/yaoyao0809.github.io/yaoyao0809.github.io/0304/index.html">03/04 這是詐騙</a></li>
+                  <li><a class="dropdown-item" href="file:///C:/yaoyao0809.github.io/yaoyao0809.github.io/0311/img/index.html">03/11 唐詩賞析</a></li>
+                  <li><a class="dropdown-item" href="file:///C:/yaoyao0809.github.io/yaoyao0809.github.io/0318/index.html">03/18 我的歌曲</a></li>
+                  <li><a class="dropdown-item" href="file:///C:/yaoyao0809.github.io/yaoyao0809.github.io/0325\img/index.html">03/25 五首唐詩</a></li>
+                  <li><a class="dropdown-item" href="file:///C:/yaoyao0809.github.io/yaoyao0809.github.io/0408\img/index.html">04/08 Bootstrap</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="file:///C:/yaoyao0809.github.io/yaoyao0809.github.io/index2.html">回到首頁</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">search</search></button>
+            </form>
+          </div>
         </div>
-    </div>
+      </nav>
 
-<!-- 一條二
-    -->
-
-    <div class="container text-center">
-        <div class="row">
+ <br>
+ <!--第一列名片-->
+<div class="container text">
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 17rem;">
+                    <img src="img/river snow.png" class="card-img-top" alt="..."width="180" height="200">
+                                                                                    
+                    <div class="card-body">
+                    <h5 class="card-title">柳宗元-江雪</h5>
+                    <p class="card-text">千山鳥飛絕，萬徑人蹤滅。</br>
+                        孤舟蓑笠翁，獨釣寒江雪。</br></p>        
+                </div>
+            </div>
+        </div>  
+        <div class="col">
+            <div class="card" style="width: 17rem;">
+                <img src="img/byebye.png" class="card-img-top" alt="..."width="180" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">王維-送別</h5>
+                    <p class="card-text">山中相送罷，日暮掩柴扉。</br>
+                        春草明年綠，王孫歸不歸。</br>
+                        </p></p>
+                </div>
+            </div>
+          </div>
             <div class="col">
-                <div id="mycard">
-
-                    <img src="img/river snow.png" width="256">
-        
-                    <div id="caption" class="klee-one-caption">
-                        <h1>柳宗元-江雪</h1>
-                    </div>
-        
-                    <div id="maincontent" class="klee-one-maincontent">
-                        <p>千 山 鳥 飛 絕 ，萬 徑 人 蹤 滅 。</br>
-                            孤 舟 蓑 笠 翁 ，獨 釣 寒 江 雪 。</br>
-                        </p>
-                    </div>
-
-
+            <div class="card" style="width: 17rem;">
+                    <img src="img/libai.png" class="card-img-top" alt="..."width="180" height="200">
+                                                                                    
+                    <div class="card-body">
+                    <h5 class="card-title">李白-贈孟浩然</h5>
+                    <p class="card-text">吾愛孟夫子，風流天下聞。</br>
+                        紅顏棄軒冕，白首臥松雲。</br>
+                        醉月頻中聖，迷花不事君。</br>
+                        高山安可仰，徒此挹清芬。</br></p>
                 </div>
             </div>
-            <div class="col">
-                <div id="mycard">
+        </div>  
+    <div>
+<div>
 
-                    <img src="img/byebye.png" width="256">
-        
-                    <div id="caption" class="klee-one-caption">
-                        <h1>王維-送別</h1>
-                    </div>
-        
-                    <div id="maincontent" class="klee-one-maincontent">
-                        <p>山 中 相 送 罷 ，日 暮 掩 柴 扉 。</br>
-                            春 草 明 年 綠 ，王 孫 歸 不 歸 。</br>
-                        </p>
-                    </div>
-
-
+</br>
+      <!--第二列名片-->
+<div class="container text">
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 20rem;">
+                    <img src="img/climb.jpg" class="card-img-top" alt="..."width="180" height="200">
+                                                                                    
+                    <div class="card-body">
+                    <h5 class="card-title">杜甫-登樓</h5>
+                    <p class="card-text">花近高樓傷客心，萬方多難此登臨。</br>
+                        錦江春色來天地，玉壘浮雲變古今。</br>
+                        北極朝廷終不改，西山寇盜莫相侵。</br>
+                        可憐後主還祠廟，日暮聊為梁父吟。</br></p>
                 </div>
             </div>
-
-
+        </div>  
+        <div class="col">
+            <div class="card" style="width: 20rem;">
+                <img src="img/yellow.png" class="card-img-top" alt="..."width="180" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">崔顥-黃鶴樓</h5>
+                    <p class="card-text">昔人已乘黃鶴去，此地空餘黃鶴樓。</br>
+                        黃鶴一去不復返，白雲千載空悠悠。</br>
+                        晴川歷歷漢陽樹，芳草萋萋鸚鵡洲。</br>
+                        日暮鄉關何處是，煙波江上使人愁。</br>
+                        </p></p>
                 </div>
             </div>
-        </div>
-    </div>
-   
+        </div>  
+    <div>
+<div>
+
+ </br>
+ <!--footer-->
+ <div>
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2025 Copyright:
+            <a class="text-reset fw-bold" href="https://sites.google.com/stu.ntue.edu.tw/Yaoyao">Yaoyao</a>
+        </footer>
+ </div>
+
 </body>
 
- 
 </html>
